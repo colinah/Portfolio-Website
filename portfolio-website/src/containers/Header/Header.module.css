@@ -1,0 +1,28 @@
+.ImageContainer {
+    background: url('../../assests/header-placement.jpg') left 50% bottom 50%/cover no-repeat border-box;
+    height: 528px;
+    width:100%;
+    position: relative;
+    filter: grayscale(50%)
+}
+
+
+.TitleContainer {
+    /* color: #35637c; */
+    padding-top: 100px;
+    /* width: 400px; */
+    margin: auto;
+    display: inline-block;
+}
+
+.Name {
+    color: #ffffff;
+    border-bottom: 0.1px solid #afafaf;
+    margin-bottom: 8px;
+    font-size: 4em;
+}
+
+.Position {
+    color: #b5d6f0;
+    margin-top: 8px;
+}

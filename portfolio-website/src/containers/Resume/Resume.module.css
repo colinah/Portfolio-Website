@@ -1,0 +1,12 @@
+.TitleContainer {
+    color: #35637c;
+    /* width: 400px; */
+    margin:  20 auto;
+    display: inline-block;
+}
+
+.Title {
+    font-size: 2.5em;
+    border-bottom: 0.1px solid #afafaf;
+    margin-bottom: 0;
+}

@@ -1,0 +1,59 @@
+.AboutMeContainer {
+    color:#000000;
+    display: block;
+    margin: auto;
+}
+
+.TitleContainer {
+    color: #35637c;
+    /* width: 400px; */
+    margin:  20 auto;
+    display: inline-block;
+}
+
+.AboutMe {
+    font-size: 2.5em;
+    border-bottom: 0.1px solid #afafaf;
+}
+
+.BodyContainer {
+    margin: auto;
+width: 70%;
+}
+
+.ImageContainer {
+    display: inline-block;
+    width: 30%;
+    min-width: 200px;
+    vertical-align: middle;
+   
+}
+
+.ImageProfile {
+    width:100%;
+    border-radius: 12px;
+    border: 1.5px solid white;
+    /* box-shadow: 2px 2px 2px 3px #636363 */
+}
+
+.ContentContainer {
+    padding-left: 20px;
+    display: inline-block;
+    width: 65%;
+    vertical-align: middle;
+
+}
+
+.IconContainer {
+    margin: auto;
+    width: 60%;
+    display: block;
+    border-bottom: #afafaf solid 2px;
+    margin: auto;
+}
+
+.Icons {
+    display: inline-block;
+    width: 25px;
+    padding: 20px;
+}
