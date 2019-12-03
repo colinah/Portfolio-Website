@@ -1,0 +1,22 @@
+.Timer {
+    color: rgb(58, 58, 58);
+    font-size: 54px;
+    margin-top: 0px;
+    margin-bottom: 36px;
+    padding-top: 0;
+    transform: scale(1,2);
+    height: 100%;
+    width: 100%;
+
+
+}
+
+.Red {
+    color: red;
+    background-color: aqua;
+}
+
+.Timer h4 {
+    height: 100%;
+    width: 100%;
+}

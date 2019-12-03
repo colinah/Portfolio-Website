@@ -7,15 +7,17 @@ class AboutMe extends Component {
         return (
             <div className={classes.AboutMeContainer}>
                 <div className= {classes.TitleContainer}>
-                    <h2 className={classes.AboutMe}>About Me</h2>
+                    <h2 className={classes.AboutMe}>Get to know me</h2>
                 </div>    
                 <div className={classes.BodyContainer}>
                     <div className = {classes.ImageContainer}>
                     <img src={Image} alt="Head Shot" className={classes.ImageProfile} />
                     </div>
                     <div className={classes.ContentContainer}>
-                        <p>Me: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-                        <p>Info: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae tempus quam pellentesque nec nam. Diam volutpat commodo sed egestas. </p>
+                        <p>I discovered my passion for programing in a data analysis MATLAB course during my Master's degree. I enjoy the challenge and logical solutions involve in coding.</p>
+                        <p>I have been coding for about a year learning HTLM5, CSS, JavaScript, React.js and PHP on Udemy courses.</p>
+                        <p>My favorite language is JavaScript and I enjoy doing the <a href="https://www.hackerrank.com/Halecolin1">HackerRank</a> challenges to practice my logic.</p>
+                        <p>Other then coding my passing is climbing rocks, anything from large cliffs in Yosemite valley to small boulders in the desert.</p>
                     </div>
                 </div>
                 <div className={classes.IconContainer}>

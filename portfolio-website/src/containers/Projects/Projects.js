@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import BurgerProject from './Project/BurgerProject/BurgerProject';
+import HackerRank from './Project/HackerRank/HackerRank';
 import classes from './Projects.module.css';
 
 class Projects extends Component {
@@ -14,8 +15,9 @@ class Projects extends Component {
                 <div className={classes.TitleContainer}>
                     <h2 className={classes.Title}>Projects</h2>
                 </div>
-                <div>
-                    <BurgerProject />
+                <div >
+                    <BurgerProject key="10"/>
+                    <HackerRank />
                 </div>
             </div>
             
