@@ -1,5 +1,7 @@
+@import "../../variables"
+
 .TitleContainer {
-    color: #35637c;
+    color: map-get($map: $color, $key: main);
     /* width: 400px; */
     margin:  20 auto;
     display: inline-block;
