@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import BurgerProject from './Project/BurgerProject/BurgerProject';
 import HackerRank from './Project/HackerRank/HackerRank';
 import Timer from './Project/Timer/Timer';
-import classes from './Projects.module.css';
+import classes from './Projects.module.scss';
 import Modal from '../../components/UI/Modal/Modal';
 
 class Projects extends Component {

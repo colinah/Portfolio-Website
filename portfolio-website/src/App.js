@@ -5,7 +5,7 @@ import Header from './containers/Header/Header';
 import Resume from './containers/Resume/Resume';
 import Projects from './containers/Projects/Projects';
 import Footer from './containers/Footer/Footer';
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
