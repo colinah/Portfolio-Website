@@ -1,4 +1,4 @@
-
+@import "_variables";
 
 .App {
   text-align: center;
@@ -9,16 +9,16 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: map-get($colors,fourth);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: map-get($colors,fourth);
 }
 
 .App-link {
-  color: #09d3ac;
+  color: map-get($colors,second);
 }
