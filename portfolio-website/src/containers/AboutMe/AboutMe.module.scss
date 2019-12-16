@@ -1,5 +1,7 @@
+@import "../../variables.scss";
+
 .AboutMeContainer {
-    color:#000000;
+    color: map-get($colors, main);
     display: block;
     margin: auto;
 }
@@ -9,7 +11,7 @@
 }
 
 .TitleContainer {
-    color: #35637c;
+    color: map-get($colors, main);
     /* width: 400px; */
     margin:  20 auto;
     display: inline-block;
@@ -17,7 +19,7 @@
 
 .AboutMe {
     font-size: 2.5em;
-    border-bottom: 0.1px solid #afafaf;
+    border-bottom: 0.1px solid map-get($colors , border);
 }
 
 .BodyContainer {
@@ -36,7 +38,7 @@ width: 70%;
 .ImageProfile {
     width:100%;
     border-radius: 12px;
-    border: 1.5px solid white;
+    border: 0.5px solid map-get($colors , border);
     /* box-shadow: 2px 2px 2px 3px #636363 */
 }
 
@@ -52,7 +54,7 @@ width: 70%;
     margin: auto;
     width: 60%;
     display: block;
-    border-bottom: #afafaf solid 2px;
+    border-bottom: map-get($colors , border) solid 2px;
     margin: auto;
 }
 
