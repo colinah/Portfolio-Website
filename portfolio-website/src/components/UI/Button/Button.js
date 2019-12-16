@@ -9,6 +9,7 @@ const button = (props) => {
     }
     return (
         <button 
+            onClick = {props.click}
             className={classes.Button}  
         >{text}</button>
     )

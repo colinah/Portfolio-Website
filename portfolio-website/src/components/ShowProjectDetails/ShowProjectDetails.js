@@ -3,7 +3,7 @@ import classes from './ShowProjectDetails.module.css'
 import Button from '../UI/Button/Button';
 
 const showProjectDetails = (props) => {
-    let button = <Button link = {props.modal}>Show</Button>
+    let button = <Button click = {props.showModal} >Show</Button>
     if(props.link){
         button = (
             <Button link={props.link} >Site</Button>
@@ -19,7 +19,9 @@ const showProjectDetails = (props) => {
             </div>
             <div className={classes.Links}>
                 {button}
-                <Button link = {props.gitLink}>Github</Button>
+                <Button
+                    link = {props.gitLink}
+                    >Github</Button>
                 <p>Opens in new tab</p>
             </div>
 

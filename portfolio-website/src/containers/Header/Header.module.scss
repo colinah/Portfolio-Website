@@ -1,5 +1,12 @@
+@import "../../variables";
+
 .ImageContainer {
-    background: url('../../assests/header-placement.jpg') left 50% bottom 50%/cover no-repeat border-box;
+    background: {
+        image: url('../../assests/header-placement.jpg');
+        position: center;
+        repeat: no-repeat;
+        size: 100vw;
+    };
     height: 528px;
     width:100%;
     position: relative;
@@ -16,13 +23,13 @@
 }
 
 .Name {
-    color: #ffffff;
-    border-bottom: 0.1px solid #afafaf;
+    color: map-get($map: $colors, $key: fourth);
+    border-bottom: 0.1px solid map-get($map: $colors, $key: border );
     margin-bottom: 8px;
     font-size: 4em;
 }
 
 .Position {
-    color: #b5d6f0;
+    color: map-get($map: $colors, $key: third);
     margin-top: 8px;
 }

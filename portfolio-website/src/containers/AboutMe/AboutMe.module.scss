@@ -3,7 +3,8 @@
 .AboutMeContainer {
     color: map-get($colors, main);
     display: block;
-    margin: auto;
+    margin: 0 auto;
+    max-width: 80rem;
 }
 
 .AboutMeContainer p {

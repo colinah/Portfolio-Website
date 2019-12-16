@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import Aux from '../Aux/Aux'
-import classes from './Layout.module.css'
+import classes from './Layout.module.scss'
 
 
 class Layout extends Component {
+    componentWillMount() {
+        document.title = 'Colin Hale'
+      }
     render(){
 
         return (

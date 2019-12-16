@@ -1,9 +1,9 @@
 import React , {Component} from 'react';
-import classes from './Timer.module.css'
+import classes from './CSS.module.css'
 import ShowProjectDetails from '../../../../components/ShowProjectDetails/ShowProjectDetails';
 
 
-class HackerRank extends Component {
+class CSS extends Component {
         state = {
             showDetails: false
         }
@@ -19,13 +19,13 @@ class HackerRank extends Component {
 let showDetailsComponent = null
         if(this.state.showDetails){
             showDetailsComponent = <ShowProjectDetails 
-                                        title="Timer" 
-                                        discription='Two hour challenge to see how much I can code to make a timer.'
-                                        gitLink = "https://github.com/colinah/Timer" 
-                                        link = "https://timer-408d6.firebaseapp.com/" />
+                                        title="UHost" 
+                                        discription="Udemy CSS-The Complete Guide 2020 course project by Maximilian Schwarzmüller and Manuel Lorenz. This course covers everything from basic CSS selectors and combinators to flexbox, css grid and sass." 
+                                        link = "https://css-course-d3dee.firebaseapp.com/index.html"
+                                        gitLink = "https://github.com/colinah/CSS-Course" />
         }
     return (
-        <div className={classes.Timer}
+        <div className={classes.HackerRank}
             onMouseEnter = {this.mouserEnterHandler}
             onMouseLeave = {this.mouseLeaveHandler}
             >
@@ -35,4 +35,4 @@ let showDetailsComponent = null
     }
 }
 
-export default HackerRank
+export default CSS
