@@ -14,10 +14,10 @@ class AboutMe extends Component {
                     <img src={Image} alt="Head Shot" className={classes.ImageProfile} />
                     </div>
                     <div className={classes.ContentContainer}>
-                        <p>I discovered my passion for programing in a data analysis MATLAB course during my Master's degree. I enjoy the challenge and logical solutions involve in coding.</p>
+                        <p>I discovered my passion for programing in a data analysis MATLAB course during my Master's degree. I enjoy the challenge and logical solutions involved in coding.</p>
                         <p>I have been coding for about a year learning HTLM5, CSS, JavaScript, React.js and PHP on Udemy courses.</p>
                         <p>My favorite language is JavaScript and I enjoy doing the <a href="https://www.hackerrank.com/Halecolin1">HackerRank</a> challenges to practice my logic.</p>
-                        <p>Other then coding my passing is climbing rocks, anything from large cliffs in Yosemite valley to small boulders in the desert.</p>
+                        <p>Other than coding, my passing is climbing rocks, anything from large cliffs in Yosemite valley to small boulders in the desert.</p>
                     </div>
                 </div>
                 <div className={classes.IconContainer}>
