@@ -1,7 +1,9 @@
+@import "../../variables";
+
 .FooterContainer {
     width: 100%;
-    background: #000000;
-    color: white;
+    background: map-get($colors, main);
+    color: map-get($map: $colors, $key: fourth);
     padding:  32px 0;
 }
 
