@@ -4,6 +4,7 @@ const header = () => {
     return (
         <div className={classes.ImageContainer}>
             <div className={classes.TitleContainer}>
+                <h2 className = {classes.Intro}>Hello, I'm</h2>
                 <h1 className = {classes.Name} >Colin Hale</h1>
                 <p className={classes.Position}>React.js Developer</p>
             </div>

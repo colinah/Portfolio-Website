@@ -2,7 +2,8 @@
 
 .ImageContainer {
     background: {
-        image: url('../../assests/header-placement.jpg');
+        // image: url('../../assests/header-placement.jpg');
+        color: map-get($map:$colors , $key: third );
         position: center;
         repeat: no-repeat;
         size: 100vw;
@@ -22,11 +23,16 @@
     display: inline-block;
 }
 
+.Intro {
+    color: map-get($map: $colors, $key: fourth);
+    font-size: 4em;
+    margin-bottom: 0em;
+}
+
 .Name {
     color: map-get($map: $colors, $key: fourth);
-    border-bottom: 0.1px solid map-get($map: $colors, $key: border );
-    margin-bottom: 8px;
-    font-size: 4em;
+    margin-top: 0em;
+    font-size: 6em;
 }
 
 .Position {
