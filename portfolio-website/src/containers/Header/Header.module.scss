@@ -2,18 +2,20 @@
 
 .ImageContainer {
     background: {
-        // image: url('../../assests/header-placement.jpg');
         color: map-get($map:$colors , $key: third );
         position: center;
         repeat: no-repeat;
-        size: 100vw;
     };
     height: 100vh;
     width: 100vw;
     position: relative;
-    filter: grayscale(50%)
 }
 
+.TreeContainer {
+    position: absolute;
+    right: 0;
+    z-index: 100;
+}
 
 .TitleContainer {
     /* color: #35637c; */
@@ -21,6 +23,8 @@
     /* width: 400px; */
     margin: auto;
     display: inline-block;
+    z-index: 200;
+    position: relative;
 }
 
 .Intro {
