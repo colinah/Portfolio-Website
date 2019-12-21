@@ -65,16 +65,18 @@ class FractalTree extends Component {
     tree = [];
 
     resizeCanvasHandler = (p5) => {
-        let treeLen = this.tree.length
-        this.tree = [];
-        let a = p5.createVector(this.props.startLocation[0].x,this.props.startLocation[0].y);
-        let b = p5.createVector(this.props.startLocation[1].x,this.props.startLocation[1].y);
-        p5.resizeCanvas(this.props.width,this.props.height)
-        this.tree[0] = new Branch(a,b,p5)
-        for(let i = 0; i < treeLen; i++){
-              this.tree.push(this.tree[i].fork(this.props.angle,this.props.scl));
-              this.tree.push(this.tree[i].fork(-this.props.angle,this.props.scl))
-          }
+            let treeLen = this.tree.length
+            this.tree = [];
+            p5.resizeCanvas(this.props.width,this.props.height)
+            let a = p5.createVector(this.props.startLocation[0].x,this.props.startLocation[0].y);
+            let b = p5.createVector(this.props.startLocation[1].x,this.props.startLocation[1].y);
+            this.tree[0] = new Branch(a,b,p5)
+            for(let i = 0; i < treeLen; i++){
+                if(this.tree.length < 13000){
+                this.tree.push(this.tree[i].fork(this.props.angle,this.props.scl));
+                this.tree.push(this.tree[i].fork(-this.props.angle,this.props.scl))
+                }
+            }
     }
 
 addBranchesHandler = () => {
@@ -93,7 +95,7 @@ setup = (p5, parent) => {
     let a = p5.createVector(this.props.startLocation[0].x,this.props.startLocation[0].y);
     let b = p5.createVector(this.props.startLocation[1].x,this.props.startLocation[1].y);
     this.tree[0] = new Branch(a,b,p5)
-    p5.frameRate(1)
+    p5.frameRate(2)
 }
  
 draw = (p5) => {
@@ -103,8 +105,8 @@ draw = (p5) => {
       if(this.tree.length < 20){
         this.addBranchesHandler()
       }
-      if(this.props.width !==this.state.width){
-          this.setState({width:this.props.width,needsUpdate:true})
+      if(this.props.width !==this.state.width || this.props.height !== this.state.height){
+          this.setState({width:this.props.width,needsUpdate:true, height:this.props.height})
           this.resizeCanvasHandler(p5);
       }
 }

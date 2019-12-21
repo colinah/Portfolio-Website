@@ -8,7 +8,7 @@ class Header extends Component {
         super(props);
         this.state = { width: 0,
                         height: 0,
-                        scl: 0.8,
+                        scl: 0.7,
                         angle: 3.14159/8,
                         shouldUpdate: false};
         this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
@@ -31,7 +31,7 @@ class Header extends Component {
 
     render(){
         let sketch = (<FractalTree 
-            startLocation = {[{x:this.state.width/2,y:this.state.height},{x:this.state.width/2,y:this.state.height-(this.state.height/4)}]}
+            startLocation = {[{x:this.state.width/2,y:this.state.height},{x:this.state.width/2,y:this.state.height-(this.state.height/3)}]}
             width = {this.state.width}
             height = {this.state.height}
             scl = {this.state.scl}
