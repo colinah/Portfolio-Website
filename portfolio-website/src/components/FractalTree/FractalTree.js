@@ -38,7 +38,8 @@ function Branch (begin,end,p5) {
 
 
 
-    this.show = (p5) => {
+    this.show = (p5,width,height) => {
+        // p5.resizeCanvas(width,height)
         p5.stroke(255);
         p5.strokeWeight(2);
         p5.line(this.begin.x, this.begin.y,this.end.x,this.end.y);
@@ -59,16 +60,32 @@ class FractalTree extends Component {
     state = {
         width: null,
         height: null,
+        needsUpdate:  false
     }
     tree = [];
 
+    resizeCanvasHandler = (p5) => {
+        let treeLen = this.tree.length
+        this.tree = [];
+        let a = p5.createVector(this.props.startLocation[0].x,this.props.startLocation[0].y);
+        let b = p5.createVector(this.props.startLocation[1].x,this.props.startLocation[1].y);
+        p5.resizeCanvas(this.props.width,this.props.height)
+        this.tree[0] = new Branch(a,b,p5)
+        for(let i = 0; i < treeLen; i++){
+              this.tree.push(this.tree[i].fork(this.props.angle,this.props.scl));
+              this.tree.push(this.tree[i].fork(-this.props.angle,this.props.scl))
+          }
+    }
+
 addBranchesHandler = () => {
-    for(let i = this.tree.length-1; i >= 0; i--){
-        if(!this.tree[i].finished){
-          this.tree.push(this.tree[i].fork(this.props.angle,this.props.scl));
-          this.tree.push(this.tree[i].fork(-this.props.angle,this.props.scl))
+    if(this.tree.length < 13000){
+        for(let i = this.tree.length-1; i >= 0; i--){
+            if(!this.tree[i].finished){
+              this.tree.push(this.tree[i].fork(this.props.angle,this.props.scl));
+              this.tree.push(this.tree[i].fork(-this.props.angle,this.props.scl))
+            }
         }
-      }
+    }
 }
 
 setup = (p5, parent) => {
@@ -79,22 +96,23 @@ setup = (p5, parent) => {
     p5.frameRate(1)
 }
  
-draw = p5 => {
+draw = (p5) => {
     for(let i = 0; i < this.tree.length;i++){
-        this.tree[i].show(p5)
+        this.tree[i].show(p5,this.state.width,this.state.height)
       }
       if(this.tree.length < 20){
         this.addBranchesHandler()
+      }
+      if(this.props.width !==this.state.width){
+          this.setState({width:this.props.width,needsUpdate:true})
+          this.resizeCanvasHandler(p5);
       }
 }
 
 
 render() {
     return (
-        <div>
             <Sketch setup={this.setup} draw={this.draw} mousePressed={this.addBranchesHandler}/>
-            <p>width:{this.props.width}</p>
-        </div>
     )
   }
 }
