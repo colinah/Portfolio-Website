@@ -14,7 +14,7 @@ const showProjectDetails = (props) => {
             <div>
                 <h3>{props.title}</h3>
             </div>
-            <div>
+            <div className={classes.Discription}>
             <p>{props.discription}</p>
             </div>
             <div className={classes.Links}>

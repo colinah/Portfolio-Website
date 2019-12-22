@@ -2,7 +2,8 @@
 
 .ImageContainer {
     background: {
-        color: map-get($map:$colors , $key: third );
+        // color: map-get($map:$colors , $key: third );
+        color: #424242;
         position: center;
         repeat: no-repeat;
     };

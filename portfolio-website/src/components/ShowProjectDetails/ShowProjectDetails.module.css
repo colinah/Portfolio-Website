@@ -5,7 +5,7 @@
     box-sizing: border-box;
     display: inline-block;
     background: rgba(70, 69, 69, 0.8);
-    border-radius: 8px;
+    /* border-radius: 8px; */
     position: absolute;
     top: 0;
     left: 0;
@@ -21,4 +21,8 @@
 
 .Links p {
     margin: 0 auto;
+}
+
+.Discription {
+    transition: all 0.3s ease-in-out;
 }

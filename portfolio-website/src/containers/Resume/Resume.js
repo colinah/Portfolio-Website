@@ -20,7 +20,6 @@ const resume = () => {
         <div className={classes.Experience}>
             <div>Professor</div>
             <div>Research</div>
-            <div>I am useless</div>
         </div>
         
         </div>
