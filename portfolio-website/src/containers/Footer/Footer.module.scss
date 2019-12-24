@@ -2,8 +2,8 @@
 
 .FooterContainer {
     width: 100%;
-    background: map-get($colors, third);
-    color: map-get($map: $colors, $key: fourth);
+    color: map-get($colors, fourth);
+    background: map-get($colors, fifth);
     padding:  32px 0;
 }
 

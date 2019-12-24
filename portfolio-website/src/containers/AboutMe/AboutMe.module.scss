@@ -2,13 +2,14 @@
 
 .AboutMeContainer {
     color: map-get($colors, main);
-    display: block;
-    margin: 0 auto;
-    max-width: 80rem;
+    margin: 0;
+    width: 100%;
+    padding:0;
 }
 
 .AboutMeContainer p {
     text-align: left;
+    display: inline-block;
 }
 
 .TitleContainer {
@@ -21,18 +22,26 @@
 .AboutMe {
     font-size: 2.5em;
     border-bottom: 0.1px solid map-get($colors , border);
+    display: inline-block;
+}
+
+.Center {
+    margin:0 auto;
 }
 
 .BodyContainer {
-    margin: auto;
-width: 70%;
+    margin: 0 auto;
+    max-width: 1000px;
+
 }
 
 .ImageContainer {
     display: inline-block;
-    width: 30%;
-    min-width: 200px;
+    // width: 25%;
+    // min-width: 200px;
+    // max-width: 300px;
     vertical-align: middle;
+    padding-left: 40px;
    
 }
 
@@ -40,27 +49,96 @@ width: 70%;
     width:100%;
     border-radius: 12px;
     border: 0.5px solid map-get($colors , border);
+    max-width: 200px;
     /* box-shadow: 2px 2px 2px 3px #636363 */
 }
 
+.ImageContentContainer {
+    max-width: 200px;
+}
+
+.ImageTitle {
+margin: 8px auto;
+}
+
+.ImageContent {
+margin: 0 auto;
+}
+
 .ContentContainer {
-    padding-left: 20px;
     display: inline-block;
     width: 65%;
-    vertical-align: middle;
+    vertical-align: top;
 
+}
+
+.ContentContainer li {
+    display: inline-block;
+}
+
+.IconHeader {
+    width: 100px;
+    height: 100px;
+}
+
+.SectonContainer {
+    display: inline-block;
+    min-width: 260px;
+    padding: 20px;
+}
+
+.SectionContent {
+    margin: auto;
+    padding:0;
+    display: block;
+}
+.SectionContent li {
+    margin: auto;
+    padding:0;
+    display: block;
 }
 
 .IconContainer {
     margin: auto;
-    width: 60%;
     display: block;
-    border-bottom: map-get($colors , border) solid 2px;
+    // border-bottom: map-get($colors , border) solid 2px;
     margin: auto;
+    padding: 8px 0;
 }
 
 .Icons {
     display: inline-block;
     width: 25px;
-    padding: 20px;
+    padding: 5px 10px;
+}
+
+@media (max-width:949px){
+    .BodyContainer {
+        width: 100%; 
+    }
+    .ContentContainer {
+        display: block;
+        width:100%;
+        max-width: 610px;
+        margin: 0 auto;
+    }
+    .ImageContentContainer {
+        display: inline-block;
+        padding: 20px 20px 20px 40px;
+        width: 300px;
+        vertical-align: middle;
+    }
+    .ImageProfile {
+       display: inline-block;
+       vertical-align: middle;
+    }
+    .ImageContainer {
+        padding-left: 0;
+    }
+    .ImageDiv {
+        display: inline-block;
+    }
+    .SectonContainer {
+        margin: 0 auto;
+    }
 }

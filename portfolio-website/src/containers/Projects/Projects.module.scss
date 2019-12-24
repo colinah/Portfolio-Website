@@ -1,8 +1,10 @@
 @import "../../variables";
 
 .ProjectsContainer {
-    width: 80%;
-    margin: 20px auto;
+    width: 100%;
+    margin: 0;
+    background: #d4d4d4;
+    padding-bottom: 40px;
 }
 
 .TitleContainer {
@@ -15,7 +17,13 @@
 .Title {
     font-size: 2.5em;
     border-bottom: 0.1px solid map-get($map: $colors, $key: border );
-    margin-bottom: 0;
+    margin-bottom: 1em;
+}
+
+.ProjectsContent {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
 }
 
 @media(min-width: 800) {

@@ -2,8 +2,8 @@ import React from 'react';
 import Layout from './hoc/Layout/Layout';
 import AboutMe from './containers/AboutMe/AboutMe';
 import Header from './containers/Header/Header';
-import Resume from './containers/Resume/Resume';
 import Projects from './containers/Projects/Projects';
+import Contact from './containers/Contact/Contact';
 import Footer from './containers/Footer/Footer';
 import './App.scss';
 
@@ -13,8 +13,8 @@ function App() {
       <Layout>
         <Header />
         <AboutMe />
-        <Resume />
         <Projects />
+        <Contact />
         <Footer />
       </Layout>
     </div>

@@ -1,0 +1,38 @@
+@import "../../variables.scss";
+
+.ContactContainer{
+    box-sizing: border-box;
+    padding: 150px 0;
+    width: 100%;
+    margin:0;
+    background: map-get($map: $colors, $key: third)
+}
+
+.ContactTitle {
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.FormLabels {
+    display: inline-block;
+}
+
+.FormGroup {
+    padding: 2px
+}
+
+.Input {
+    max-width: 400px;
+    width: 99%;
+    background: map-get($map: $colors, $key: sixth);
+    border: 1px solid black;
+}
+
+.AreaInput {
+    background: map-get($map: $colors, $key: sixth);
+    width: 99%;
+    max-width: 400px;
+    height: 200px;
+    border: 1px solid black;
+
+}

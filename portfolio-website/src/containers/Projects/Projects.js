@@ -27,12 +27,12 @@ class Projects extends Component {
 
             <div className={classes.ProjectsContainer}>
                 <Modal show={this.state.showModal} modalClosed={this.modalClosedHandler}>
-                    <p>Hi</p>
+                    <p>Hello</p>
                 </Modal>
                 <div className={classes.TitleContainer}>
                     <h2 className={classes.Title}>Projects</h2>
                 </div>
-                <div >
+                <div className={classes.ProjectsContent}>
                     <BurgerProject />
                     <CSS />
                     <HackerRank />
