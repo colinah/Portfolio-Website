@@ -22,6 +22,8 @@ class Contact extends Component {
             }).catch(error=>{
                 console.log(error)
             })
+
+        this.setState({name: '',email:'',message:''})
     }
 
 
