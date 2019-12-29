@@ -78,7 +78,7 @@ class FractalTree extends Component {
             let b = p5.createVector(this.props.startLocation[1].x,this.props.startLocation[1].y);
             this.tree[0] = new Branch(a,b,p5)
             for(let i = 0; i < treeLen; i++){
-                if(this.tree.length < 13000){
+                if(this.tree.length < 1000){
                 this.tree.push(this.tree[i].fork(this.props.angle,this.props.scl));
                 this.tree.push(this.tree[i].fork(-this.props.angle,this.props.scl))
                 }
@@ -86,7 +86,7 @@ class FractalTree extends Component {
     }
 
 addBranchesHandler = () => {
-    if(this.tree.length < 13000){
+    if(this.tree.length < 1000){
         for(let i = this.tree.length-1; i >= 0; i--){
             if(!this.tree[i].finished){
               this.tree.push(this.tree[i].fork(this.props.angle,this.props.scl));
