@@ -23,7 +23,7 @@ class Contact extends Component {
                 console.log(error)
             })
 
-        this.setState({name: '',email:'',message:''})
+        this.setState({name: '',email:'',message:'Your Message has been sent.'})
     }
 
 
@@ -31,38 +31,42 @@ class Contact extends Component {
         const {name, email, message} = this.state
         return(
             <div className={classes.ContactContainer}>
-                <h2 className={classes.ContactTitle}>Contact</h2>
-                <h4>Have any questions or want to collaborate?</h4>
-                <form onSubmit = {this.submitHandler}>
-                    <div className={classes.FormGroup}>
-                        <input 
-                            type="text"
-                            placeholder='Name'
-                            name = "name"
-                            className={classes.Input}
-                            value={name}
-                            onChange={this.changeHandler}/>
-                    </div>
-                    <div className={classes.FormGroup}>
-                        <input
-                            type="email"
-                            placeholder='Email'
-                            name = "email"
-                            className={classes.Input}
-                            value={email}
-                            onChange={this.changeHandler}/>
-                    </div>
-                    <div className={classes.FormGroup}>
-                        <input
-                            type="textarea"
-                            placeholder='Message'
-                            name = "message"
-                            className={classes.AreaInput}
-                            value={message}
-                            onChange={this.changeHandler}/>
-                    </div>
-                    <button type="submit">Submit</button>
-                </form>
+                <div className={classes.ContentContainer}>
+                    <h2 className={classes.ContactTitle}>Contact</h2>
+                    <h4>Have any questions or want to collaborate?</h4>
+                    {/* <p className={classes.Success}>Your message has been sent.</p> */}
+                    <form onSubmit = {this.submitHandler}>
+                        <div className={classes.FormGroup}>
+                            <input 
+                                type="text"
+                                placeholder='Name'
+                                name = "name"
+                                className={classes.Input}
+                                value={name}
+                                onChange={this.changeHandler}/>
+                        </div>
+                        <div className={classes.FormGroup}>
+                            <input
+                                type="email"
+                                placeholder='Email'
+                                name = "email"
+                                className={classes.Input}
+                                value={email}
+                                onChange={this.changeHandler}/>
+                        </div>
+                        <div className={classes.FormGroup}>
+                            <input
+                                type="textarea"
+                                placeholder='Message'
+                                name = "message"
+                                className={classes.AreaInput}
+                                value={message}
+                                onChange={this.changeHandler}/>
+                        </div>
+                        <button type="submit" className={classes.Button}>Submit</button>
+                    </form>
+                </div>
+                
             </div>
         )
     }

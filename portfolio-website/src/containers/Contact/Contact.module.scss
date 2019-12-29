@@ -5,12 +5,28 @@
     padding: 150px 0;
     width: 100%;
     margin:0;
-    background: map-get($map: $colors, $key: third)
+    background: map-get($map: $colors, $key: third);
+}
+
+.ContentContainer {
+    max-width: 400px;
+    width: 99%;
+    border: 1px solid black;
+    align-items: center;
+    margin: 0 auto;
+    background: map-get($map: $colors, $key: fifth);
+}
+
+.ContactContainer h4 {
+    color: map-get($map: $colors, $key: fourth);
+
 }
 
 .ContactTitle {
     margin: 0;
+    padding-top: 20px;
     padding-bottom: 20px;
+    color: map-get($map: $colors, $key: fourth);
 }
 
 .FormLabels {
@@ -34,5 +50,16 @@
     max-width: 400px;
     height: 200px;
     border: 1px solid black;
+
+}
+
+.Button {
+    padding: 10px 20px;
+    border: 2px solid map-get($map: $colors, $key: fourth);
+    font-size: 1em;
+    font-weight: bold;
+    display: inline-block;
+    cursor: pointer;
+    margin: 10px;
 
 }
