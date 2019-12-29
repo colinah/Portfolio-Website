@@ -103,6 +103,8 @@ setup = (p5, parent) => {
     this.tree[0] = new Branch(a,b,p5)
     p5.frameRate(3)
 }
+
+
  
 draw = (p5) => {
     for(let i = 0; i < this.tree.length;i++){

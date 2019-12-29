@@ -8,10 +8,11 @@ class Header extends Component {
         super(props);
         this.state = { width: 0,
                         height: 0,
-                        scl: 0.7,
-                        angle: 3.14159/8,
+                        scl: 0.67,
+                        angle: 3.14159/6,
                         shouldUpdate: false};
         this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+        this.sliderChangeHandler = this.sliderChangeHandler.bind(this);
       }
       
       componentDidMount() {
@@ -26,7 +27,10 @@ class Header extends Component {
       updateWindowDimensions() {
         this.setState({ width: window.innerWidth, height: window.innerHeight});
       }
-
+      sliderChangeHandler(event) {
+        // let value = event.target.value;
+        this.setState({scl: event.target.value});
+      }
 
 
     render(){
@@ -45,8 +49,17 @@ class Header extends Component {
             <div className={classes.TitleContainer}>
                 <h2 className = {classes.Intro}>Hello, I'm</h2>
                 <h1 className = {classes.Name} >Colin Hale</h1>
-                <p className={classes.Position}>React.js Developer</p>
+                <p className={classes.Position}>Front-end Web Developer</p>
             </div>
+          {/* <div className={classes.SliderContainer}>
+            <input 
+              className = {classes.Slider}
+              type="range" 
+              min="0.4" max="1" 
+              value={this.state.scl} 
+              onChange={this.sliderChangeHandler}
+              step="0.01"/>
+          </div> */}
         </div>
     )
     }

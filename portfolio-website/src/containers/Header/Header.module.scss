@@ -20,11 +20,11 @@
 }
 
 .TitleContainer {
-    /* color: #35637c; */
-    padding-top: 100px;
-    /* width: 400px; */
-    margin: auto;
-    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 40%;
+    width: 100%;
+    text-align: center;
     z-index: 200;
     position: relative;
 }
@@ -39,9 +39,22 @@
     color: map-get($map: $colors, $key: fourth);
     margin-top: 0em;
     font-size: 6em;
+    margin-bottom: 0em;
 }
 
 .Position {
     color: map-get($map: $colors, $key: third);
     margin-top: 8px;
+    font-size: 2em;
+
+}
+.SliderContainer {
+    z-index: 1000;
+    position: absolute;
+    bottom: 0;
+}
+@media(max-width: 440px){
+    .TitleContainer{
+        top:20%;
+    }
 }
