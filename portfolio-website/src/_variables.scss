@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
+
 $colors: (
     main: #1b2a49,
     second: #465881,
@@ -7,4 +9,8 @@ $colors: (
     sixth: #d4d4d4,
     border:  #afafaf
 );
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
 // #1b2a49

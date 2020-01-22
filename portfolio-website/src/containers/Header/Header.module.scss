@@ -33,6 +33,7 @@
     color: map-get($map: $colors, $key: fourth);
     font-size: 4em;
     margin-bottom: 0em;
+    font-family: inherit;
 }
 
 .Name {
@@ -40,6 +41,7 @@
     margin-top: 0em;
     font-size: 6em;
     margin-bottom: 0em;
+    font-family: inherit;
 }
 
 .Position {
