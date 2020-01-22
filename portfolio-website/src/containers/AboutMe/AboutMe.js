@@ -33,9 +33,9 @@ class AboutMe extends Component {
                             <img src={svgEdu} alt="Education" className={classes.IconHeader}/>
                             <h3>Education</h3>
                             <ul className={classes.SectionContent}>
-                                <li>Masters of Science in Geology <a href="byu.edu">BYU</a></li>
-                                <li>Bachalors of Science in Geology <a href="byu.edu">BYU</a></li>
-                                <li>Associates of Science <a href="byu.edu">UVU</a></li>
+                                <li>Masters of Science in Geology <a href="http://geology.byu.edu/Home/news/graduate-student-spotlight-colin-hale">BYU</a></li>
+                                <li>Bachalors of Science in Geology <a href="http://geology.byu.edu/Home/research-disciplines/hydrogeology-environmental-geology">BYU</a></li>
+                                <li>Associates of Science <a href="https://www.uvu.edu/">UVU</a></li>
                             </ul>
                         </div>
                         <div className={classes.SectonContainer}>
