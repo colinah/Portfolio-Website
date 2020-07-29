@@ -1,5 +1,14 @@
 @import "_variables";
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: absolute;
+  top: -60px;
+}
+
 .App {
   text-align: center;
 }
