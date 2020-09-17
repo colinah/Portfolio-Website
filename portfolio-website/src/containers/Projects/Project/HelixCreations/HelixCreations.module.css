@@ -1,0 +1,17 @@
+.HelixCreations {
+    background: url('../../../../assests/Image_Gradient.png') left 50% bottom 50%/cover no-repeat border-box;
+    width:100%;
+    height:100%;
+    position: relative;
+    height: 100%;
+    width: 20%;
+    min-width: 300px;
+    min-height: 300px;
+    margin: 0;
+    display: inline-block;
+    /* border: 1px solid black;
+    border-radius: 8px; */
+    padding:0;
+    background-color: rgb(116, 114, 114);
+
+}

@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
+import HelixCreations from './Project/HelixCreations/HelixCreations';
+import HelixConstruction from './Project/Helix/HelixConstruction';
+import AscendPnr from './Project/AscendPnr/AscendPnr';
 import BurgerProject from './Project/BurgerProject/BurgerProject';
 import HackerRank from './Project/HackerRank/HackerRank';
-import Timer from './Project/Timer/Timer';
 import CSS from './Project/CSS/CSS';
 import classes from './Projects.module.scss';
 import Modal from '../../components/UI/Modal/Modal';
@@ -33,10 +35,13 @@ class Projects extends Component {
                     <h2 className={classes.Title}>Projects</h2>
                 </div>
                 <div className={classes.ProjectsContent}>
+                    
+                    <HelixCreations />
+                    <AscendPnr />
+                    <HelixConstruction />
                     <BurgerProject />
                     <CSS />
                     <HackerRank />
-                    <Timer />
                 </div>
             </div>
             
