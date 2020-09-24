@@ -47,7 +47,7 @@ class Layout extends Component {
                 <Attributes />
                 <Skills />
                 <div ref={this.refAboutMe}></div>
-                <AboutMe />
+                {/* <AboutMe /> */}
                 <div ref={this.refProjects}></div>
                 <Projects />
                 <div ref={this.refContact}></div>
