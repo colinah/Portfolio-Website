@@ -1,32 +1,38 @@
 import React , {Component} from 'react';
 import classes from './Project.module.css'
+import ShowProjectDetails from '../../../components/ShowProjectDetails/ShowProjectDetails';
+
 
 class Project extends Component {
         state = {
-            showDetails:false
+            showDetails: false
         }
-
     mouserEnterHandler = () => {
         this.setState({
             showDetails: true
         });
     }
-
     mouseLeaveHandler = () => {
         this.setState({showDetails:false})
     }
     render() {
-let showDetailsClasses = [classes.Project]
+        let showDetailsComponent = null
         if(this.state.showDetails){
-            showDetailsClasses = [classes.Project,classes.Details]
+            const { title , discription , gitLink , link } = this.props;
+            showDetailsComponent = <ShowProjectDetails 
+                                        title={title} 
+                                        discription={discription}
+                                        gitLink = {gitLink} 
+                                        link = {link} 
+                                        />
         }
     return (
-        <div className = {showDetailsClasses.join(' ')}
+        <div style={{backgroundColor: `${this.props.backgroundcolor}`}} className={classes.Project}
             onMouseEnter = {this.mouserEnterHandler}
             onMouseLeave = {this.mouseLeaveHandler}
             >
-            <p>Project</p>
-            <p>{this.props.onMouseOver}</p>
+            <img className={classes.ProjectImage} src={this.props.backgroundurl}  alt={this.props.title}/>
+            {showDetailsComponent}
         </div>
     )
     }

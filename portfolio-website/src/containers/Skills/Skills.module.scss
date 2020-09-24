@@ -1,0 +1,75 @@
+@import "../../variables";
+
+.Container {
+    position: relative;
+    height: 160px;
+    background-color: map-get($map: $colors, $key: third);
+    width: 100%;
+    margin: 0 auto;
+
+    @media (min-width: 1024px){
+        width:60%;
+    }
+
+    .Right {
+        position: absolute;
+        top: 0;
+        right: -160px;
+        border-top: 80px solid transparent;
+        border-left: 161px solid map-get($map: $colors, $key: third);
+        border-bottom: 80px solid transparent;
+    }
+
+    .Left {
+        position: absolute;
+        top: 0;
+        left: -160px;
+        border-top: 80px solid transparent;
+        border-right: 161px solid map-get($map: $colors, $key: third);
+        border-bottom: 80px solid transparent;
+    }
+    .Title {
+        font-size: 3em;
+        color: map-get($map: $colors, $key: fourth);
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        height: 100%;
+        line-height: 160px;
+    }
+
+
+}
+
+.Content {
+    position: relative;
+    top: -80px;
+    width: 100%;
+    display: flex;
+    flex: wrap;
+    z-index: -1;
+
+    .Light {
+        background-color: map-get($map: $colors, $key: fifth);
+
+        height: 800px;
+        width: 100%;
+
+        @media (min-width:1024px) {
+            width: 50%;
+            background-color: map-get($map: $colors, $key: fourth);
+        }
+
+    }
+
+    .Dark {
+        background-color: map-get($map: $colors, $key: fifth);
+        height: 800px;
+        width: 100%;
+
+        @media (min-width:1024px) {
+            width: 50%;
+
+        }
+    }
+}

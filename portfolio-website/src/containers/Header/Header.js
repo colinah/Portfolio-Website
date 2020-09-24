@@ -49,17 +49,7 @@ class Header extends Component {
             <div className={classes.TitleContainer}>
                 <h2 className = {classes.Intro}>Hello, I'm</h2>
                 <h1 className = {classes.Name} >Colin Hale</h1>
-                <p className={classes.Position}>Front-end Web Developer</p>
             </div>
-          {/* <div className={classes.SliderContainer}>
-            <input 
-              className = {classes.Slider}
-              type="range" 
-              min="0.4" max="1" 
-              value={this.state.scl} 
-              onChange={this.sliderChangeHandler}
-              step="0.01"/>
-          </div> */}
         </div>
     )
     }

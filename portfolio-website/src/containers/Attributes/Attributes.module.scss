@@ -1,0 +1,73 @@
+@import "../../variables";
+
+.Container {
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
+
+    .Title {
+        font-size: 3em;
+        color:map-get($map: $colors, $key: fourth);
+        color:map-get($map: $colors, $key: fifth);
+        background-color: map-get($map: $colors, $key: seven);
+        background-color: map-get($map: $colors, $key: fourth);
+        padding: 40px;
+        border-radius: 40px;
+        // margin-left: 5%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .Content {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+
+        .Attributes{
+            width: 100%;
+            display: inline-flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 10px;
+            align-items: center;
+
+            .Attribute{
+                padding: 20px;
+                margin-left: 20px;
+                flex: 0 1 auto;
+
+
+                strong{
+                    font-size: 4em;
+                    color: map-get($map: $colors, $key: third);
+                }
+
+                h5{
+                    margin: 0;
+                    display: inline-flex;
+                    align-items: center;
+                    width: 100%;
+                    font-size: 1.3em;
+                }
+
+            }
+            .Explanation{
+                flex: 1 1 300px;
+                padding: 20px 40px 20px 40px;
+
+            }
+
+        }
+       
+
+    }
+
+    .ImageWrapper {
+        // flex: 0 1 auto;
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}

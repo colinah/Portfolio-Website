@@ -1,0 +1,243 @@
+@import "../../variables";
+
+.Defender {
+    width: 100vw;
+
+    .DefenderHeader {
+        position: relative;
+        width: 100%;
+        height: 600px;
+
+
+        .Cover {
+            position: absolute;
+            right:0;
+            top:0;
+            border: none;
+            z-index: 1;
+            width: 100%;
+            color: map-get($map: $colors, $key: fourth);
+            background: rgba(0,144,158,1);
+            @media (min-width: 1024px){
+                
+                background: linear-gradient(60deg, rgba(0,0,0,0) 25%, rgba(0,144,158,1) 25%, rgba(0,144,158,1) 100%);
+            }
+        }
+
+        .Quote {
+            position: absolute;
+            right: 5%;
+            top: 40%;
+            padding: 50px 40px 40px 40px;
+            width: 400px;
+            font-size: 28px;
+            // color: map-get($map: $colors, $key: fifth);
+            color: map-get($map: $colors, $key: seven);
+            background-color: rgba(255,255,255, 0.4);
+            border-radius: 50%;
+            display: none;
+
+            @media (min-width: 768px) {
+                display: block;
+
+            }
+
+            a, a:active, a:hover {
+                text-decoration: underline;
+                color: inherit;
+              }
+
+        }
+        
+      .Image {
+        width:100%;
+        height: 100%;
+        background-image: url('https://static.neris-assets.com/images/personality-types/headers/sentinels_Defender_ISFJ_personality_header.svg');
+        background-position: 20% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+            @media (min-width: 1024px){
+                background-position: 30% 50%;
+            }
+      }
+      .Link {
+          position: absolute;
+          right:2px;
+          bottom: 2px;
+          font-size: 8px;
+          color: map-get($map: $colors, $key: fifth);
+
+          a, a:active, a:hover {
+            text-decoration: none;
+            color: inherit;
+          }
+      }
+    }
+    
+
+    .Learn {
+        width: 100%;
+
+        .Show {
+            display: block;
+            animation-duration:0.5s;
+            animation-name: slidein;
+        }
+
+        .Hide {
+            animation-duration:0.5s;
+            animation-name: slideout;
+
+        }
+        
+        .Erase {
+            display: none;
+        }
+          
+          @keyframes slidein {
+            from {
+              max-height: 0px;
+              transform: scale(0);
+              opacity: 0;
+            }
+          
+            to {
+              max-height: 1000px;
+              transform: scale(1);
+              opacity: 1;
+            }
+          }
+
+          @keyframes slideout {
+            from {
+                opacity: 1;
+            }
+          
+            to {
+                height: 0;
+                transform: scale(0);
+                opacity: 0;
+                visibility: hidden;
+                margin: 0;
+            }
+          }
+
+        .Header{
+            height: 80px;
+            display: inline-flex;
+            width: 100vw;
+
+            .Question {
+                position: relative;
+                background-color: map-get($map: $colors, $key: third);
+                height: 100%;
+                width: 60%;
+                display: grid;
+                place-items: center;
+                color: map-get($map: $colors, $key: fourth);
+                .Triangle {
+                    position: absolute;
+                    top: 0;
+                    right: -80px;
+                    border-top: 40px solid transparent;
+                    border-left: 81px solid map-get($map: $colors, $key: third);
+                    border-bottom: 40px solid transparent;
+                    
+                }
+            }
+            .ButtonWrapper {
+                display: grid;
+                place-items: center;
+                margin-left: 80px;
+    
+                @media(min-width:768px) {
+                    margin-left: 90px;
+                }
+                @media(min-width:1024px) {
+                    margin-left: 120px;
+                }
+                
+    
+                .Button {
+                    cursor: pointer;
+                    color: map-get($map: $colors, $key: third);
+                }
+            }
+        }
+        
+        .Answer {
+            position: relative;
+            color: map-get($map: $colors, $key: fifth);
+
+           @media (min-width: 1024px){
+               margin: 20px auto;
+                width: 80%;
+                border: 10px solid map-get($map: $colors, $key: third);
+                max-width: 1200px;
+           } 
+
+           .Close {
+               position: absolute;
+               padding: 15px 20px 20px 20px;
+               top:0;
+               right: 0;
+               z-index: 2;
+               color: map-get($map: $colors, $key: third);
+               font-size: 22px;
+           }
+           .TitleMain {
+               text-align: left;
+               padding-left: 40px;
+               font-size: 1.8em;
+               color: map-get($map: $colors, $key: third);
+           }
+           .Introduction{
+               text-align: left;
+               color: inherit;
+               padding: 20px;
+               font-size: 1.2em;
+               text-indent: 2em;
+           }
+
+           .Content {
+               display: flex;
+               flex-wrap: wrap;
+               justify-content: space-around;
+
+                .Section{
+                    flex: 0 1 300px;
+                    padding: 10px;
+    
+                    .Quote {
+                    padding: 60px 0 60px 0;
+                    width: 300px;
+                    color: map-get($map: $colors, $key: seven)
+
+
+                }
+
+                .Attribute {
+                    text-align: left;
+                }
+                .Title {
+                    margin: 10px 0 10px 0;
+                    text-align: left;
+                    font-size: 1.4em;
+                    color: map-get($map: $colors, $key: third);
+                }
+            }
+
+           }
+
+
+        }
+
+
+
+
+    }
+
+
+}
+

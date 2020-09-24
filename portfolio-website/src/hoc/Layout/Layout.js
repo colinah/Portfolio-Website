@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import Aux from '../Aux/Aux'
 import Nav from '../../containers/Nav/Nav';
 import NavMobile from '../../containers/NavMobile/NavMobile';
+import Defender from '../../containers/Defender/Defender';
+import Attributes from '../../containers/Attributes/Attributes';
+import Skills from '../../containers/Skills/Skills';
 import AboutMe from '../../containers/AboutMe/AboutMe';
 import Header from '../../containers/Header/Header';
 import Projects from '../../containers/Projects/Projects';
@@ -39,6 +42,10 @@ class Layout extends Component {
                     scrollProjects={(()=>this.scrollToMyRef(this.refProjects.current.offsetTop-60))}
                     scrollContact={(()=>this.scrollToMyRef(this.refContact.current.offsetTop-60))} />
                 <Nav />
+                <div ref={this.refDefender}></div>
+                <Defender />
+                <Attributes />
+                <Skills />
                 <div ref={this.refAboutMe}></div>
                 <AboutMe />
                 <div ref={this.refProjects}></div>

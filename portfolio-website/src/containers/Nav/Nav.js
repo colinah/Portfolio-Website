@@ -5,7 +5,7 @@ class Header extends Component {
 
     render(){
     return (
-        <div class={classes.Nav}>
+        <div className={classes.Nav}>
             Down Arrow
         </div>
 

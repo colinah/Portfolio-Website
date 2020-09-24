@@ -5,7 +5,6 @@ import svgEdu from '../../assests/icons/education.svg';
 import svgClimber from '../../assests/icons/climber.svg';
 import svgCode from '../../assests/icons/code.svg';
 import svgBook from '../../assests/icons/book.svg';
-
 class AboutMe extends Component {
     render(){
         return (

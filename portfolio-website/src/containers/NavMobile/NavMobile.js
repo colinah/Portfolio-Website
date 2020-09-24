@@ -34,21 +34,21 @@ class NavMobile extends Component {
             exitMenu = classes.ExitMenu
         }
     return (
-        <div class={classes.Nav}>
-            <div onClick={this.toggleClass} class={hamburgerDisplay}>
-                <div class={classes.NavMobileToggle}>
+        <div className={classes.Nav}>
+            <div onClick={this.toggleClass} className={hamburgerDisplay}>
+                <div className={classes.NavMobileToggle}>
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
             </div>
-            <div onClick={this.toggleClass} class={exitMenu}>
+            <div onClick={this.toggleClass} className={exitMenu}>
                 <div>
                     X
                 </div>
             </div>
-            <div class={navDisplay}>
-                    <div class={classes.NavMobileMenu}>
+            <div className={navDisplay}>
+                    <div className={classes.NavMobileMenu}>
                         <div onClick={this.scrollToAboutMe}>About Me</div>
                         <div onClick={this.scrollToProjects}>Projects</div>
                         <div onClick={this.scrollToContact}>Contact</div>
