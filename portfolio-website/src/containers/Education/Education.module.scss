@@ -1,0 +1,6 @@
+@import '../../variables';
+
+.Container {
+    padding: 20px;
+    background-color: map-get($map: $colors, $key: third);
+}

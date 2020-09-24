@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import classes from './Skills.module.scss';
 import Html from '../../assests/icons/HTML.png';
 import Css from '../../assests/icons/CSS.png';

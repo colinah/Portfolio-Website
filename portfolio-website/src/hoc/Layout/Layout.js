@@ -5,10 +5,9 @@ import NavMobile from '../../containers/NavMobile/NavMobile';
 import Defender from '../../containers/Defender/Defender';
 import Attributes from '../../containers/Attributes/Attributes';
 import Skills from '../../containers/Skills/Skills';
-import AboutMe from '../../containers/AboutMe/AboutMe';
 import Header from '../../containers/Header/Header';
-import Projects from '../../containers/Projects/Projects';
-import Contact from '../../containers/Contact/Contact';
+import Experience from '../../containers/Experience/Experience';
+import Education from '../../containers/Education/Education';
 import Footer from '../../containers/Footer/Footer';
 import classes from './Layout.module.scss'
 
@@ -49,9 +48,11 @@ class Layout extends Component {
                 <div ref={this.refAboutMe}></div>
                 {/* <AboutMe /> */}
                 <div ref={this.refProjects}></div>
-                <Projects />
+                <Experience />
+                <Education />
+                {/* <Projects /> */}
                 <div ref={this.refContact}></div>
-                <Contact />
+                {/* <Contact /> */}
                 <Footer />
                 </main>
              </Aux>

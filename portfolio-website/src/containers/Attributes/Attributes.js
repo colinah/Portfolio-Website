@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import classes from './Attributes.module.scss';
-import ClimbingImage from '../../assests/linos.jpg'
 
 
 class Attributes extends Component{
