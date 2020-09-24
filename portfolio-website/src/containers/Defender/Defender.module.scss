@@ -31,7 +31,6 @@
             padding: 50px 40px 40px 40px;
             width: 400px;
             font-size: 28px;
-            // color: map-get($map: $colors, $key: fifth);
             color: map-get($map: $colors, $key: seven);
             background-color: rgba(255,255,255, 0.4);
             border-radius: 50%;
@@ -126,7 +125,7 @@
         .Header{
             height: 80px;
             display: inline-flex;
-            width: 100vw;
+            width: 100%;
 
             .Question {
                 position: relative;
@@ -136,6 +135,7 @@
                 display: grid;
                 place-items: center;
                 color: map-get($map: $colors, $key: fourth);
+
                 .Triangle {
                     position: absolute;
                     top: 0;
