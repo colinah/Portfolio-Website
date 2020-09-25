@@ -5,20 +5,12 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-import ApolloClient from 'apollo-boost';
-import { ApolloProvider } from 'react-apollo';
 
-
-const client = new ApolloClient({
-  uri: 'http://api.local/graphql'
-})
 
 const app = (
-    <ApolloProvider client={client}>
         <BrowserRouter>
             <App />
         </BrowserRouter>
-    </ApolloProvider>
 );
 ReactDOM.render(app, document.getElementById('root'));
 
