@@ -29,7 +29,7 @@ class Attributes extends Component{
                         </div>
                         <div className={classes.Attributes}>
                             <div className={classes.Attribute}><h5><strong>T</strong>urbulent</h5></div>
-                            <p className={classes.Explanation}>I have keen eye for details and spot when things are amiss quickly. I like to help when I see a need in a down-to-earth manner. </p>
+                            <p className={classes.Explanation}>I have keen eye for details and spot when things are amiss quickly. I like to help when I see a need in a down-to-earth manner. Sometimes I take criticism personally, but that just means I'll never make the same mistake twice.</p>
                         </div>      
     
                     </div>
