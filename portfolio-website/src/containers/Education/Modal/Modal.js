@@ -25,7 +25,7 @@ class Modal extends Component {
                 onMouseEnter = {this.mouserEnterHandler}
                 onMouseLeave = {this.mouseLeaveHandler}
                 >
-                <img src={this.props.image} />
+                <img src={this.props.image} alt={this.props.alt}/>
                 <div className={CSS.join(' ')}>
                     <h4 className={classes.ModalHeader}>{this.props.title}</h4>
                     <div className={classes.ModalContent}>{this.props.description}</div>
