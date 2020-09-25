@@ -24,6 +24,7 @@ class Education extends Component {
                 <div className={classes.Content}>
                     <div className={classes.Section}>
                         <div className={classes.Header}>Bachelor's of Science in Geology</div>
+                        <div className={classes.Tag}>Touch or hover over images to learn more</div>
                         <div className={classes.Images}>
                             <Modal 
                                 image = {Class}
@@ -71,6 +72,7 @@ class Education extends Component {
                     </div>
                     <div className={classes.Section}>
                         <div className={classes.Header}>Masters's of Science in Geology</div>
+                        <div className={classes.Tag}>Touch or hover over images to learn more</div>
                         <div className={classes.Images}>
                             <div>
                                 <Modal 
