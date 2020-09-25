@@ -1,6 +1,74 @@
 @import '../../variables';
 
 .Container {
-    padding: 20px;
-    background-color: map-get($map: $colors, $key: third);
+    margin-top: 80px;
+
+    .Break {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        // place-items: center;
+        height: 160px;
+
+        .Title {
+            margin: 0;
+            color: map-get($map: $colors, $key: fourth);
+            font-size: 3em;
+            background-color: map-get($map: $colors, $key: third);
+            line-height: 160px;
+    }
+
+        .Right {
+            border-bottom: 161px solid transparent;
+            border-left: 160px solid map-get($map: $colors, $key: third);
+            background-color: map-get($map: $colors, $key: fifth);
+            // border-top: 160px solid transparent;
+            // border-left: 160px solid map-get($map: $colors, $key: third);
+
+        }
+    
+        .Left {
+            border-bottom: 160px solid transparent;
+            border-right: 160px solid map-get($map: $colors, $key: third);
+            background-color: map-get($map: $colors, $key: fifth);
+            // border-top: 160px solid transparent;
+            // border-right: 160px solid map-get($map: $colors, $key: third);
+        }
+    
+    }
+
+    .Content {
+        background-color: map-get($map: $colors, $key: fifth);
+        padding-bottom: 80px;
+
+        .Header {
+            font-size: 2em;
+            padding-top: 40px;
+            color: map-get($map: $colors, $key: fourth);
+            margin-bottom: 10px;
+        }
+
+        .Section {
+            width: 100%;
+
+
+            .Images {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+
+                .Dust {
+                    display: block;
+                    width: 90%;
+                    height: 80vh;
+                    max-width: 1200px;
+                }
+
+            }
+        }
+    }
 }

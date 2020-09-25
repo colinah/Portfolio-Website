@@ -29,7 +29,11 @@ class Experience extends Component {
         return(
             <Fragment>
             <div className={classes.Container}>
-                <h2 className={classes.Title}>Experience</h2>
+                <div className={classes.Break}>
+                    <div className={classes.Left}></div>
+                    <h2 className={classes.Title}>Experience</h2>
+                    <div className={classes.Right}></div>
+                </div>
                 <div className={classes.Content}>
                     <h3 className={classes.TextOuter}>Ascend Performance and Rehab</h3>
                     <div className={classes.Section}>

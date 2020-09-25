@@ -3,18 +3,41 @@
 .Container {
     width: 100%;
     position: relative;
-    // top:-80px;
+    // top: -80px;
+    
 
-    .Title {
-        margin: 0;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        font-size: 3em;
+    .Break {
+        position: relative;
         width: 100%;
-        color: map-get($map: $colors, $key: fifth);
-        border-top: 10px solid map-get($map: $colors, $key: third);
-        border-bottom: 10px solid map-get($map: $colors, $key: third);
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        height: 160px;
         margin-bottom: 80px;
+        
+        .Title {
+            margin: 0;
+            color: map-get($map: $colors, $key: fourth);
+            font-size: 3em;
+            background-color: map-get($map: $colors, $key: third);
+            line-height: 160px;
+            
+    }
+
+        .Right {
+            border-bottom: 160px solid transparent;
+            border-left: 161px solid map-get($map: $colors, $key: third);
+            // border-top: 160px solid transparent;
+            // border-left: 160px solid map-get($map: $colors, $key: third);
+
+        }
+    
+        .Left {
+            // border-bottom: 160px solid transparent;
+            // border-right: 160px solid map-get($map: $colors, $key: third);
+            border-top: 161px solid transparent;
+            border-right: 160px solid map-get($map: $colors, $key: third);
+        }
     }
 
     .Content {
@@ -58,13 +81,16 @@
             display: grid;
             place-items: center;
             
+            
             // @media (min-width:1024px) {
             //     width: 50%;
             // }
     
             img {
+                padding: 20px;
                 height:auto;
                 max-width: 100%;
+                box-sizing: border-box;
             }
         }
 

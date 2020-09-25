@@ -3,8 +3,11 @@
 .FooterContainer {
     width: 100%;
     color: map-get($colors, fourth);
-    background: map-get($colors, fifth);
+    background: map-get($colors, third);
     padding:  32px 0;
+    p {
+        font-size: 2em;
+    }
 }
 
 .IconContainer {
