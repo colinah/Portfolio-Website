@@ -70,7 +70,7 @@ class Education extends Component {
                         </div>
                     </div>
                     <div className={classes.Section}>
-                        <div className={classes.Header}>Masters's of Science in Geology (Still in Progress)</div>
+                        <div className={classes.Header}>Masters's of Science in Geology</div>
                         <div className={classes.Images}>
                             <div>
                                 <Modal 
