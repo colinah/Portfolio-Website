@@ -4,6 +4,8 @@
 .Image {
     position: relative;
     max-width: 600px;
+    overflow: hidden;
+    max-height: 700px;
 
     img {
         vertical-align: middle;
@@ -11,6 +13,7 @@
         height: auto;
         padding: 10px;
         box-sizing: border-box;
+        object-fit: cover;
 
     }
 

@@ -21,7 +21,7 @@ class Attributes extends Component{
                         </div>
                         <div className={classes.Attributes}>
                             <div className={classes.Attribute}><h5><strong>F</strong>eelings</h5></div>
-                            <p className={classes.Explanation}>I spend time thinking about my emotions and others. This makes me a great time player, by observing others emotional states and seeing things from their perspective I can bring teams together to be on the same page.</p>
+                            <p className={classes.Explanation}>I spend time thinking about my emotions and others. This makes me a great team player, by observing others emotional states and seeing things from their perspective I bring teams together.</p>
                         </div>        
                         <div className={classes.Attributes}>
                             <div className={classes.Attribute}><h5><strong>J</strong>udging</h5></div>

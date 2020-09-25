@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import classes from './Modal.module.scss'
 
 class Modal extends Component {
@@ -20,6 +20,18 @@ class Modal extends Component {
             CSS = [classes.Modal, classes.Show];
         }
 
+        let description = <div className={classes.ModalContent}>{this.props.description}</div>
+        if( this.props.descriptionTwo ) {
+            description = 
+            (
+                <Fragment>
+                    <div className={classes.ModalContent}>{this.props.description}</div>
+                    <div className={classes.ModalContent}>{this.props.descriptionTwo}</div>
+                    <div className={classes.ModalContent}>{this.props.descriptionThree}</div>
+                </Fragment>
+            )
+        }
+
         return(
             <div className={classes.Image}
                 onMouseEnter = {this.mouserEnterHandler}
@@ -28,7 +40,7 @@ class Modal extends Component {
                 <img src={this.props.image} alt={this.props.alt}/>
                 <div className={CSS.join(' ')}>
                     <h4 className={classes.ModalHeader}>{this.props.title}</h4>
-                    <div className={classes.ModalContent}>{this.props.description}</div>
+                    {description}
                     <div className={classes.ModalSkills}>{this.props.skills}</div>
                 </div>
             </div>
