@@ -47,8 +47,9 @@ class Header extends Component {
                 {sketch}
             </div>
             <div className={classes.TitleContainer}>
-                <h2 className = {classes.Intro}>Hello, I'm</h2>
+                <div className = {classes.Intro}>Hello, I'm</div>
                 <h1 className = {classes.Name} >Colin Hale</h1>
+                <h2 className= {classes.Position}>Front-end Web Developer</h2>
             </div>
         </div>
     )

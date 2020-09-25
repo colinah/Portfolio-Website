@@ -31,7 +31,9 @@ class Experience extends Component {
             <div className={classes.Container}>
                 <div className={classes.Break}>
                     <div className={classes.Left}></div>
-                    <h2 className={classes.Title}>Experience</h2>
+                    <div className={classes.Center}>
+                        <h2 className={classes.Title}>What have I built?</h2>
+                    </div>
                     <div className={classes.Right}></div>
                 </div>
                 <div className={classes.Content}>

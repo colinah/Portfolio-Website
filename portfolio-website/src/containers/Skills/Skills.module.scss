@@ -40,8 +40,11 @@
         text-align: center;
         width: 100%;
         margin: 0;
+    }
+    .Center {
         height: 100%;
-        line-height: 160px;
+        display: grid;
+        place-items: center;
     }
 
 

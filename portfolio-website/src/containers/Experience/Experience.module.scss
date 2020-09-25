@@ -10,33 +10,44 @@
         position: relative;
         width: 100%;
         margin: 0 auto;
-        display: grid;
-        grid-template-columns: auto 1fr auto;
         height: 160px;
         margin-bottom: 80px;
+
+        @media (min-width: 600px){
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+        }
+
+        .Center {
+            background-color: map-get($map: $colors, $key: third);            
+            display: grid;
+            place-items: center;
+            height: 160px;
+        }
         
         .Title {
             margin: 0;
             color: map-get($map: $colors, $key: fourth);
             font-size: 3em;
-            background-color: map-get($map: $colors, $key: third);
-            line-height: 160px;
-            
-    }
+        }
 
         .Right {
+            display: none;
             border-bottom: 160px solid transparent;
             border-left: 161px solid map-get($map: $colors, $key: third);
-            // border-top: 160px solid transparent;
-            // border-left: 160px solid map-get($map: $colors, $key: third);
+            @media (min-width: 600px){
+                display: block;
+            }
 
         }
     
         .Left {
-            // border-bottom: 160px solid transparent;
-            // border-right: 160px solid map-get($map: $colors, $key: third);
+            display: none;
             border-top: 161px solid transparent;
             border-right: 160px solid map-get($map: $colors, $key: third);
+            @media (min-width: 600px){
+                display: block;
+            }
         }
     }
 

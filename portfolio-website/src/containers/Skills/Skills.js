@@ -18,7 +18,7 @@ class Skills extends Component {
                 <div className={classes.Container}>
                     <div className={classes.Right}></div>
                     <div className={classes.Left}></div>
-                    <h2 className={classes.Title}>Coding Skills</h2>
+                    <div className={classes.Center}><h2 className={classes.Title}>What are my skills?</h2></div>
                 </div>
                 <div className={classes.Wrapper}>
                     <div className={classes.Content}>
