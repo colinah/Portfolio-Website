@@ -16,8 +16,10 @@ class Modal extends Component {
     render(){
 
         let CSS = [classes.Modal, classes.Hide];
+        let Plus = classes.Plus;
         if(this.state.showDetails){
             CSS = [classes.Modal, classes.Show];
+            Plus = classes.NoPlus
         }
 
         let description = <div className={classes.ModalContent}>{this.props.description}</div>
@@ -37,6 +39,7 @@ class Modal extends Component {
                 onMouseEnter = {this.mouserEnterHandler}
                 onMouseLeave = {this.mouseLeaveHandler}
                 >
+                <div className={Plus}>+</div>
                 <img src={this.props.image} alt={this.props.alt}/>
                 <div className={CSS.join(' ')}>
                     <h4 className={classes.ModalHeader}>{this.props.title}</h4>
