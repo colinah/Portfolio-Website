@@ -6,9 +6,9 @@ import JavaScript from '../../assests/icons/javascript.svg';
 import PHP from '../../assests/icons/Php.svg';
 import Python from '../../assests/icons/Python.png';
 import Matlab from '../../assests/icons/Matlab.png';
-import Wordpress from '../../assests/icons/Wordpress.jpg';
-import Laravel from '../../assests/icons/Laravel.jpg';
-import REACT from '../../assests/icons/react.jpg';
+import Wordpress from '../../assests/icons/Wordpress.png';
+import Laravel from '../../assests/icons/laravel.png';
+import REACT from '../../assests/icons/React.png';
 import Vue from '../../assests/icons/vue.png';
 
 class Skills extends Component {
