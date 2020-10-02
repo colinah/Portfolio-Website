@@ -13,7 +13,7 @@ class Attributes extends Component{
                     <div className={classes.Content}>
                         <div className={classes.Attributes}>
                             <div className={classes.Attribute}><h5><strong>I</strong>ntroverted</h5></div>
-                            <p className={classes.Explanation}>I like to spend time by myself. I enjoy learning and studying so I regularly learn new things.  I’m  productive and efficient working alone but enjoy working in teams as the proverb from John Heywood’s says “Two brains are better than one”.</p>
+                            <p className={classes.Explanation}>I like to spend time by myself. I enjoy learning and studying so I regularly learn new things.  I’m  productive and efficient working alone but enjoy working in teams as the proverb from John Heywood’s says, “Two brains are better than one”.</p>
                         </div>
                         <div className={classes.Attributes}>
                             <div className={classes.Attribute}><h5><strong>S</strong>ensing</h5></div>

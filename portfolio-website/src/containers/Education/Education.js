@@ -35,7 +35,7 @@ class Education extends Component {
                             <Modal 
                                 image = {FieldCamp}
                                 title = "Geology Field Camp"
-                                description = "Field Camp is traditional for Geology Majors. Field came is an intensive outdoor course applying your knowledge and laboratory skills to solve geologic problems. My field camp was working twelve hours a day for six weeks of “fun”  while living in a tent mapping geological features in southern Utah. "
+                                description = "Field Camp is traditional for Geology Majors. Field camp is an intensive outdoor course applying your knowledge and laboratory skills to solve geologic problems. My field camp was working twelve hours a day for six weeks of “fun”  while living in a tent mapping geological features in southern Utah. "
                                 skills = "Problem-Solving Hard-Working Attention-to-Details ArcGIS Writing Illustrator Photoshop Excel Sleeping-In-Tents"
                                 alt = "Geology Field Camp"
                                 />
