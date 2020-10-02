@@ -48,11 +48,11 @@ class Defender extends Component {
             <div className={classes.Learn}>
                 <div className={classes.Header}>
                     <div className={classes.Question}>
-                        <h3>Not Sure what that is?</h3>
+                        <h3>Not sure what that is?</h3>
                         <div className={classes.Triangle}></div>
                     </div>
                     <div className={classes.ButtonWrapper}>
-                        <span className={classes.Button} onClick={this.toggleLearn}>Learn More About the 16 Personalities</span>
+                        <span className={classes.Button} onClick={this.toggleLearn}>Learn more about the 16Personalities</span>
                     </div>
                 </div>
                 <div className={AnswerStyle.join(' ')}>

@@ -50,7 +50,7 @@ class Experience extends Component {
                             <div className={classes.Skills}>
                                 <strong>Skills Used: </strong>HTML5, SCSS, JavaScript, PHP, MySQL, Wordpress, Custome Theme Development, Design, Apache, Linux
                             </div>
-                            <div className={classes.Visit}><a href="https://ascendpnr.com">Visit AscendPnR</a></div>
+                            <div className={classes.Visit}><a href="https://ascendpnr.com" target="_blank">Visit AscendPnR</a></div>
                         </div>
                     </div> {/* Section */}
                     <h3 className={classes.TextOuter}>Helix Creations</h3>
@@ -63,7 +63,7 @@ class Experience extends Component {
                             <div className={classes.Skills}>
                                 <strong>Skills Used: </strong>HTML5, SCSS, JavaScript, PHP, MySQL, Wordpress, Custome Theme Development, Design, Apache, Linux
                             </div>
-                            <div className={classes.Visit}><a href="https://helixcreations.com">Visit Helix Creations</a></div>
+                            <div className={classes.Visit}><a href="https://helixcreations.com" target="_blank">Visit Helix Creations</a></div>
                         </div>
                         <div className={classes.Image}>
                             <img alt="https://helixcreations.com" src={Creations} />
@@ -82,7 +82,7 @@ class Experience extends Component {
                             <div className={classes.Skills}>
                                 <strong>Skills Used: </strong>HTML5, SCSS, JavaScript, PHP, MySQL, Wordpress, Apache, Linux
                             </div>
-                            <div className={classes.Visit}><a href="https://helixcreations.com">Visit Helix Construction Co</a></div>
+                            <div className={classes.Visit}><a href="https://helixcreations.com" target="_blank">Visit Helix Construction Co</a></div>
                         </div>
                     </div> {/* Section */}
                     <h3 className={classes.TextOuter}>Your Favorite Site</h3>
