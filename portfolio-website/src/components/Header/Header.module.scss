@@ -1,0 +1,41 @@
+@import '../../variables';
+
+.Header {
+    width: 100%;
+    // max-width: 600px;
+    // max-height: 400px;
+    display: grid;
+    place-items: center;
+    padding-top: 40px;
+    overflow-x: hidden;
+
+    .FractalTree {
+        padding-top: 40px;
+        // border-bottom: 2px solid map-get($map: $colors, $key: third);
+    }
+
+    .Nav {
+        width: 100%;
+        display: grid;
+        place-items: center;
+        padding-top: 20px;
+
+        .Links a {
+            padding: 20px;
+            box-sizing: border-box;
+            text-decoration: none;
+            color: map-get($map: $colors, $key: fifth);
+            font-weight: bold;
+        }
+        .Links a:hover {
+            cursor: pointer;
+            color: map-get($map: $colors, $key: third);
+        }
+
+        .Border{
+            padding-top: 20px;
+            width: 60%;
+            border-bottom: map-get($map: $colors, $key: third) 2px solid;
+        }
+    }
+}

@@ -1,0 +1,57 @@
+@import '../../../variables';
+
+.Post:hover {
+    color: map-get($map: $colors, $key: third);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.Post {
+    padding: 40px 10px 40px 10px;
+    position: relative;
+    color: map-get($map: $colors, $key: eight);
+    flex: 0 1 300px;
+
+    a { 
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .ImageWrapper {
+        width: 100%;
+
+        .Image {
+            width: 100%;
+            height: auto
+        }
+    }
+
+    .Content {
+        height: 130px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .Title {
+            width: 100%;
+            margin: 0;
+            text-align: left;
+            color: inherit;
+        }
+        .Date {
+            color: map-get($map: $colors, $key: fifth);
+            font-weight: bold;
+            font-family: sans-serif;
+            width: 100%;
+            margin: 0;
+            text-align: left;
+        }
+        .Excerpt {
+            color: map-get($map: $colors, $key: fifth);
+            width: 100%;
+            margin: 0;
+            text-align: left;
+
+        }
+    }
+}

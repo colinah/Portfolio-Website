@@ -8,7 +8,9 @@ import Skills from '../../containers/Skills/Skills';
 import Header from '../../containers/Header/Header';
 import Experience from '../../containers/Experience/Experience';
 import Education from '../../containers/Education/Education';
+import Blog from '../../containers/Blog/Blog';
 import Footer from '../../containers/Footer/Footer';
+
 
 
 class Layout extends Component {
@@ -44,6 +46,7 @@ class Layout extends Component {
                 <Skills />
                 <Experience />
                 <Education />
+                <Blog />
                 <Footer />
                 </main>
              </Aux>
