@@ -7,6 +7,9 @@ import Header from '../Header/Header';
 import Footer from '../../containers/Footer/Footer';
 
 class Pages extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
     render(){
         return (
             <Fragment>
