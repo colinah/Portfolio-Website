@@ -48,7 +48,7 @@ class Header extends Component {
                 <nav className={classes.Nav}>
                     <div className={classes.Links}>
                         <Link to="/">Home Page</Link>
-                        <Link to="/archive">Archive</Link>
+                        <Link to="/blog/archive">Archive</Link>
                     </div>
                     <span className={classes.Border}></span>
                 </nav>

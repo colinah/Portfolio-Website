@@ -1,0 +1,15 @@
+@import '../../../../variables';
+
+.Title {
+    font-size: 3em;
+    font-family: sans-serif;
+    color: map-get($map: $colors, $key: fifth);
+}
+
+.Space {
+    height: 1000px;
+}
+
+.Iframe {
+    width: 1000px;
+}

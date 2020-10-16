@@ -1,0 +1,52 @@
+@import '../../../../variables';
+
+.Title {
+    font-size: 3em;
+    font-family: sans-serif;
+    color: map-get($map: $colors, $key: fifth);
+}
+
+.Iframe {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    min-height: 640px;
+
+    @media(min-width:760px) {
+        width: 80%;
+    }
+}
+
+
+.Content {
+    width: 90%;
+    max-width: 1000px;
+    margin: 10px auto;
+    padding: 5px;
+
+    @media(min-width:760px) {
+        width: 80%;
+    }
+
+    .Title {
+        font-size: 2em;
+        text-align: left;
+        margin-top: 60px;
+    }
+    .Text {
+        font-size: 1.2em;
+        text-align: left;
+        color: map-get($map: $colors, $key: fifth);
+    }
+
+    .Code {
+        padding-left: 20px;
+        @media(min-width:760px) {
+            padding-left: 40px;
+        }
+        text-align: left;
+        .Indent {
+            padding-left: 20px;
+        }
+    }
+}
