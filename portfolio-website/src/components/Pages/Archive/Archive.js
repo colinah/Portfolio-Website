@@ -11,6 +11,13 @@ class Archive extends Component {
                 date: "16-OCT-2020",
                 excerpt: "A resizable div element using vanila JavaScript. Simply click and drag corner to scale div to any size.",
                 link: "/blog/resizable-element"
+            },
+            {
+                image: require('../../../assests/Blog/Flexbox.png'),
+                title: "Interactive Flexbox Layouts",
+                date: "17-OCT-2020",
+                excerpt: "Toggle between different flexbox settings to better understand how flexbox works.",
+                link: "/blog/flexbox-layouts"
             }
         ]
 

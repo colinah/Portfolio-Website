@@ -1,10 +1,5 @@
 @import '../../../../variables';
 
-.Title {
-    font-size: 3em;
-    font-family: sans-serif;
-    color: map-get($map: $colors, $key: fifth);
-}
 
 .Space {
     height: 1000px;
@@ -12,4 +7,22 @@
 
 .Iframe {
     width: 1000px;
+}
+
+.Content {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding-bottom: 60px;
+}
+
+.Title {
+    font-size: 3em;
+    text-align: center;
+    margin-top: 60px;
+    color: map-get($map: $colors, $key: fifth);
+}
+.Text {
+    font-size: 1.2em;
+    text-align: left;
+    color: map-get($map: $colors, $key: fifth);
 }

@@ -5,47 +5,27 @@ class Flexbox extends Component {
     render() {
         return(
             <section>
-                <article>
-                    <h1 className={classes.Title}>10 CSS Flexbox Layouts</h1>
-                    <section>
-                        <div>Quick view</div>
-                        <div>
-                            <ol>
-                                <li>Flexbox Center Content</li>
-                                <li>Three Column Flexbox Layout</li>
-                                <li>Image Gallory Flexbox Layout</li>
-                            </ol>
-                        </div>
-                    </section>
-                    <section>
-                        <h2>CSS Layout title</h2>
-                    {/* <iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="640" name="cp_embed_1" scrolling="no" src="https://codepen.io/Diegue/embed/wgRvwZ?height=640&amp;theme-id=0&amp;slug-hash=wgRvwZ&amp;default-tab=result&amp;user=Diegue&amp;embed-version=2&amp;pen-title=Flexbox%20%40Toptal%20-%20Parent%20-%20%60display%60%20property&amp;name=cp_embed_1" style="width: 100%; overflow:hidden; display:block;" title="Flexbox @Toptal - Parent - `display` property" loading="lazy" id="cp_embed_wgRvwZ"></iframe> */}
-                    <iframe className={classes.Iframe} allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="640" width="760" name="cp_embed_1" scrolling="no" src="https://codepen.io/Diegue/embed/wgRvwZ?height=640&amp;theme-id=0&amp;slug-hash=wgRvwZ&amp;default-tab=result&amp;user=Diegue&amp;embed-version=2&amp;pen-title=Flexbox%20%40Toptal%20-%20Parent%20-%20%60display%60%20property&amp;name=cp_embed_1" title="Flexbox @Toptal - Parent - `display` property" loading="lazy" id="cp_embed_wgRvwZ"></iframe>
-
-                    </section>
-                    <section>
-                        <h2>CSS Layout title</h2>
-                    {/* <iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="640" name="cp_embed_1" scrolling="no" src="https://codepen.io/Diegue/embed/wgRvwZ?height=640&amp;theme-id=0&amp;slug-hash=wgRvwZ&amp;default-tab=result&amp;user=Diegue&amp;embed-version=2&amp;pen-title=Flexbox%20%40Toptal%20-%20Parent%20-%20%60display%60%20property&amp;name=cp_embed_1" style="width: 100%; overflow:hidden; display:block;" title="Flexbox @Toptal - Parent - `display` property" loading="lazy" id="cp_embed_wgRvwZ"></iframe> */}
-                    <iframe 
-                        className={classes.Iframe} 
-                        allowfullscreen="true" 
-                        allowpaymentrequest="true" 
-                        allowtransparency="true" 
-                        class="cp_embed_iframe " 
-                        frameborder="0" 
-                        height="640" 
-                        width="760" 
-                        name="cp_embed_1" 
-                        scrolling="no" 
-                        src="https://codepen.io/colinah/pen/wvWMLrJ?height=640&amp;theme-id=0&amp;slug-hash=wvWMLrJ&amp;default-tab=result&amp;user=Colinah&amp;embed-version=2&amp;"
-                        title="3 Column Flexbox"
-                        loading="lazy"
-                        id="cp_embed_wvWMLrJ"></iframe>
-
-                    </section>
-                </article>
-                <div className={classes.Space}></div>
-            </section>
+            <article>
+                <section>
+                    <div className={classes.Content}>
+                        <h1 className={classes.Title}>Interactive Flexbox Layouts</h1>
+                        <p className={classes.Text}>When I was first learning Flexbox it was a bit confusing understanding how to build the layouts I wanted. I thought it would be nice to have an interactive display to see what each of the different Flexbox components do. You can use the below codepen to play with different layouts and see what they do.</p>
+                    <div className={classes.Iframe}>
+                        <iframe
+                            title="flexbox"
+                            scrolling="no"
+                            frameborder="0"
+                            width="100%"
+                            height="640"
+                            id="dyXMmaP"
+                            src="https://codepen.io/Colinah/embed/preview/dyXMmaP?default-tabs=js%2Cresult&amp;embed-version=2&amp;height=600&amp;host=https%3A%2F%2Fcodepen.io&amp;slug-hash=dyXMmaP"
+                            allowfullscreen="true">
+                        </iframe>
+                    </div>
+                    </div>
+                </section>
+            </article>
+        </section>
         )
     }
 }

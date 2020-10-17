@@ -13,13 +13,14 @@ class Flexbox extends Component {
                         </div>
                         <div className={classes.Iframe}>
                             <iframe
-                            scrolling="no"
-                            frameborder="0"
-                            width="100%"
-                            height="640"
-                            id="MWeKMdz"
-                            src="https://codepen.io/Colinah/embed/preview/MWeKMdz?default-tabs=js%2Cresult&amp;embed-version=2&amp;height=600&amp;host=https%3A%2F%2Fcodepen.io&amp;slug-hash=MWeKMdz"
-                            allowfullscreen="true">
+                                title="resize"
+                                scrolling="no"
+                                frameborder="0"
+                                width="100%"
+                                height="640"
+                                id="MWeKMdz"
+                                src="https://codepen.io/Colinah/embed/preview/MWeKMdz?default-tabs=js%2Cresult&amp;embed-version=2&amp;height=600&amp;host=https%3A%2F%2Fcodepen.io&amp;slug-hash=MWeKMdz"
+                                allowfullscreen="true">
                             </iframe>
                         </div>
                         <div className={classes.Content}>
@@ -29,21 +30,21 @@ class Flexbox extends Component {
                             <div className={classes.Code}>
                                 <code>const button = document.getElementById(elementId);</code><br />
                                 <code className={classes.Indent}>button.addEventListener('mousedown', function(e){"{"} </code><br />
-                                <code className={classes.Indent}>//add mousedown functions here </code><br />
+                                <code className={classes.Indent}>{"//"}add mousedown functions here </code><br />
                                 <code className={classes.Indent}>window.addEventListener('mousemove', scale); </code><br />
                                 <code className={classes.Indent}>window.addEventListener('mouseup', removeScale); </code><br />
                                 <code>{"}"});</code><br />
                             </div>
                             <p className={classes.Text}>Now that we have the bones of our click event structured, we need to add the functionality to resize the div. I think the easiest way to go about this is to directly change the elements width and height based on relative mouse position. To do this we need to get the initial mouse position on the ‘mousedown’ event. Then we can change the element size with the difference between the original mouse position and the current mouse position. This means that we also need to get the initial width and height of the element. We can do this with the following code:</p>
                             <div className={classes.Code}>
-                                <code>//Get the mouse positions - add inside the mousedown event listener function</code><br />
+                                <code>{"//"}Get the mouse positions - add inside the mousedown event listener function</code><br />
                                 <code>function getMousePositions(e) {"{"}</code><br />
                                 <code className={classes.Indent}>mouseX = e.pageX;</code><br />
                                 <code className={classes.Indent}>mouseY = e.pageY;</code><br />
                                 <code>{"{"}</code><br />
                             </div>
                             <div className={classes.Code}>
-                                <code>//Get the elements dimensions  - add inside the mousedown event listener function</code><br />
+                                <code>{"//"}Get the elements dimensions  - add inside the mousedown event listener function</code><br />
                                 <code>function getElementDimensions() {"{"}</code><br />
                                 <code className={classes.Indent}>initialWidth = element.clientWidth;</code><br />
                                 <code className={classes.Indent}>initialHeight = element.clientHeight;</code><br />
@@ -51,7 +52,7 @@ class Flexbox extends Component {
                             </div>
                             <p className={classes.Text}>Now that we have the initial mouse position and element size we can change the elements width and height with the following code:</p>
                             <div className={classes.Code}>
-                                <code>//Change the size of the elements dimensions</code><br />
+                                <code>{"//"}Change the size of the elements dimensions</code><br />
                                 <code className={classes.Indent}>function scale(e) {"{"}</code><br />
                                 <code className={classes.Indent}>const width = initialWidth + (e.pageX - mouse_x);</code><br />
                                 <code className={classes.Indent}>const height = initialHeight + (e.pageY - mouse_y);</code><br />
@@ -61,7 +62,7 @@ class Flexbox extends Component {
                             </div>
                             <p className={classes.Text}>The last thing we need to add is removing the mousemove event listener function to stop scaling the element when the press event is released. </p>
                             <div className={classes.Code}>
-                                <code>//Remove the mousemove event listener function</code><br />
+                                <code>{"//"}Remove the mousemove event listener function</code><br />
                                 <code>function removeScale() {"{"}</code><br />
                                 <code className={classes.Indent}>window.removeEventListener( 'mousemove', scale);</code><br />
                                 <code>{"{"}</code><br />

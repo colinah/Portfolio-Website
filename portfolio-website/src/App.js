@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from './hoc/Layout/Layout';
 import './App.scss';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 import {Switch, Route} from 'react-router-dom';
 import Pages from './components/Pages/Pages'
 

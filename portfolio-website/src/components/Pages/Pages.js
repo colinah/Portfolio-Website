@@ -18,6 +18,7 @@ class Pages extends Component {
                     <Route path="/blog/archive" component={Archive}></Route>
                     {/* <Route path="/blog/css-flexbox-layouts" component={Flexbox}></Route> */}
                     <Route path="/blog/resizable-element" component={Resize}></Route>
+                    <Route path="/blog/flexbox-layouts" component={Flexbox}></Route>
                 </Switch>
                 <Footer />
             </Fragment>
